@@ -41,7 +41,7 @@
 
 ```sh
 # 从 npm 安装到 web profile（会通过 pnpm 链接进 profile）
-dsh plugin --profile web add dsh-daily-tasks
+dsh plugin --profile web add @dabouben/dsh-daily-tasks
 
 # 重启 DSH，然后刷新浏览器
 # 重启方式：kill 旧进程后重新 dsh web，或直接重启你使用的启动器

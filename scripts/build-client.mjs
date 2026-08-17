@@ -2,7 +2,7 @@
 // 产出 lib/client.js，格式与 DSH 官方客户端插件 bundle 一致。
 import { build } from 'esbuild'
 
-const PACKAGE_ID = 'dsh-daily-tasks'
+const PACKAGE_ID = '@dabouben/dsh-daily-tasks'
 const externals = ['react', 'react/jsx-runtime', 'react-dom']
 
 await build({

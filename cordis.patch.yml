@@ -2,7 +2,7 @@
 # 通过 dsh --profile web --patch 或 profile 的 cordis.patch.yml 组合进 DSH。
 - insert:
     - id: dsh-daily-tasks
-      name: 'dsh-daily-tasks'
+      name: '@dabouben/dsh-daily-tasks'
       config:
         # 任务数据文件路径（相对 $DSH_HOME，默认 ~/.dsh/daily-tasks.json）
         dataPath: !!js process.env.DSH_DAILY_TASKS_PATH ?? 'daily-tasks.json'

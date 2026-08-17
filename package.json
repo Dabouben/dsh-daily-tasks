@@ -1,8 +1,13 @@
 {
-  "name": "dsh-daily-tasks",
+  "name": "@dabouben/dsh-daily-tasks",
   "version": "0.1.0",
   "description": "DeepSeek Harness 每日/每周任务插件（启动弹窗提醒、横屏滚动条、圆圈完成、周日 AI 周总结）+ DeepSeek API 用量/余额侧边栏小部件",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dabouben/dsh-daily-tasks.git"
+  },
+  "homepage": "https://github.com/Dabouben/dsh-daily-tasks#readme",
   "keywords": [
     "dsh",
     "deepseek-harness",
