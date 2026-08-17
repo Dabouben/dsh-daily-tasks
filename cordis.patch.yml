@@ -1,0 +1,15 @@
+# dsh-daily-tasks 插件挂载补丁
+# 通过 dsh --profile web --patch 或 profile 的 cordis.patch.yml 组合进 DSH。
+- insert:
+    - id: dsh-daily-tasks
+      name: 'dsh-daily-tasks'
+      config:
+        # 任务数据文件路径（相对 $DSH_HOME，默认 ~/.dsh/daily-tasks.json）
+        dataPath: !!js process.env.DSH_DAILY_TASKS_PATH ?? 'daily-tasks.json'
+        # 用量/余额
+        apiKeyRef: 'DEEPSEEK_API_KEY'      # 查询余额用的凭证引用
+        balanceCacheMs: 60000              # 余额缓存 60s
+        usageCacheMs: 30000                # 用量聚合缓存 30s
+        sessionsRoot: ''                   # 空 = <dsh home>/sessions
+        prices: {}                         # 空 = 官方默认价目表，可覆盖
+        priceSchedule: []                  # 空 = 官方默认峰谷价目表，可覆盖

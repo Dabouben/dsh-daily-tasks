@@ -1,0 +1,8 @@
+node_modules/
+.npm-cache/
+src/
+scripts/
+tsconfig.json
+restart-dsh.sh
+restart.log
+*.tgz

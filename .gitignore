@@ -1,0 +1,8 @@
+node_modules/
+lib/
+*.tgz
+.DS_Store
+.npm-cache/
+restart.log
+scripts/.smoke-*/
+scripts/.itest-*/
